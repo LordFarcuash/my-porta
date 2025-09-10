@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+.main-body{
+    background-color: #2E302C;
+}
