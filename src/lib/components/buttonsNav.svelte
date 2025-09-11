@@ -1,12 +1,12 @@
 <script>
-	import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
-	import { faBook } from '@fortawesome/free-solid-svg-icons';
 	import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+	import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+	import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <div class="Point">
-	<FontAwesomeIcon icon={faAddressBook} size="2x" />
+	<FontAwesomeIcon icon={faUserSecret} size="2x" style="color: #e6e6e6;" />
 	<div class="about">
 		<span>A</span>
 		<span>B</span>
@@ -19,7 +19,7 @@
 	</div>
 </div>
 <div class="Point-2">
-	<FontAwesomeIcon icon={faBook} size="2x" />
+	<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
 	<div class="about2">
 		<span>K</span>
 		<span>N</span>
@@ -32,7 +32,7 @@
 	</div>
 </div>
 <div class="Point-3">
-	<FontAwesomeIcon icon={faDiagramProject} size="2x" />
+	<FontAwesomeIcon icon={faDiagramProject} size="2x" style="color: #e6e6e6;" />
 	<div class="about3">
 		<span>G</span>
 		<span>I</span>
@@ -57,7 +57,6 @@
 		align-items: center;
 		display: flex;
 		justify-content: center;
-		color: white;
 	}
 
 	.Point:hover {
@@ -82,7 +81,6 @@
 		transition:
 			opacity 0.3s ease,
 			transform 0.3s ease;
-		color: white;
 		font-weight: bold;
 		font-size: 15px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
@@ -158,7 +156,6 @@
 		align-items: center;
 		display: flex;
 		justify-content: center;
-		color: white;
 	}
 
 	.Point-2:hover {
@@ -183,7 +180,6 @@
 		transition:
 			opacity 0.3s ease,
 			transform 0.3s ease;
-		color: white;
 		font-weight: bold;
 		font-size: 15px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
@@ -260,7 +256,6 @@
 		align-items: center;
 		display: flex;
 		justify-content: center;
-		color: white;
 	}
 
 	.Point-3:hover {
@@ -284,7 +279,6 @@
 		transition:
 			opacity 0.3s ease,
 			transform 0.3s ease;
-		color: white;
 		font-weight: bold;
 		font-size: 15px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
