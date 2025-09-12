@@ -29,6 +29,7 @@
 		<span>D</span>
 		<span>G</span>
 		<span>E</span>
+		<span>s</span>
 	</div>
 </div>
 <div class="Point-3">
@@ -48,8 +49,8 @@
 		position: absolute;
 		top: -47vh;
 		left: 3vh;
-		width: 95px;
-		height: 95px;
+		width: 75px;
+		height: 75px;
 		background-color: #5e615b;
 		border-radius: 25px;
 		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
@@ -82,7 +83,7 @@
 			opacity 0.3s ease,
 			transform 0.3s ease;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 10px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
 	}
 
@@ -147,8 +148,8 @@
 		position: absolute;
 		top: -47vh;
 		left: 15vh;
-		width: 95px;
-		height: 95px;
+		width: 75px;
+		height: 75px;
 		background-color: #797c76;
 		border-radius: 25px;
 		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
@@ -181,7 +182,7 @@
 			opacity 0.3s ease,
 			transform 0.3s ease;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 10px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
 	}
 
@@ -216,6 +217,9 @@
 	.about2 span:nth-child(8) {
 		transition-delay: 0.45s;
 	}
+	.about2 span:nth-child(9) {
+		transition-delay: 0.5s;
+	}
 
 	/* Desaparición inversa */
 	.Point-2:not(:hover) .about2 span:nth-child(1) {
@@ -242,13 +246,16 @@
 	.Point-2:not(:hover) .about2 span:nth-child(8) {
 		transition-delay: 0.05s;
 	}
+	.Point-2:not(:hover) .about2 span:nth-child(9) {
+		transition-delay: 0.03s;
+	}
 
 	.Point-3 {
 		position: absolute;
 		top: -47vh;
 		left: 27vh;
-		width: 95px;
-		height: 95px;
+		width: 75px;
+		height: 75px;
 		background-color: #92968f;
 		border-radius: 25px;
 		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
@@ -280,7 +287,7 @@
 			opacity 0.3s ease,
 			transform 0.3s ease;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 10px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
 	}
 

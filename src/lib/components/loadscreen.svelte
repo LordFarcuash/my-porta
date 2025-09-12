@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { ProgressRing } from '@skeletonlabs/skeleton-svelte';
 
 	let showLoader = true;
 	let startExitAnimation = false;
@@ -7,18 +8,18 @@
 	onMount(() => {
 		setTimeout(() => {
 			startExitAnimation = true;
-		}, 2500);
+		}, 1500);
 
 		setTimeout(() => {
 			showLoader = false;
-		}, 3500);
+		}, 2500);
 	});
 </script>
 
 {#if showLoader}
 	<div class="loader-overlay" class:exit={startExitAnimation}>
 		<div class="loader-content">
-			<h1 class="loader-title">Loading...</h1>
+			<h1 class="loader-title">|--Loading--|</h1>
 			<div class="spinner-container">
 				<div class="spinner"></div>
 			</div>
