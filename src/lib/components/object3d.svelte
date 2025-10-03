@@ -12,10 +12,10 @@
 
 		// 🚀 Cámara
 		const camera = new THREE.PerspectiveCamera(
-			45,
+			35,
 			container3D.clientWidth / container3D.clientHeight,
 			0.1,
-			1000
+			250
 		);
 		camera.position.set(0, 2, 4);
 
@@ -126,7 +126,7 @@
 
 			// Rotación manual adicional (opcional, puedes comentar si solo quieres las animaciones originales)
 			if (model) {
-				model.rotation.y += 0.005;
+				model.rotation.y += 0.001;
 			}
 
 			renderer.render(scene, camera);
@@ -162,7 +162,7 @@
 		top: 0;
 		z-index: 2;
 		overflow: hidden;
-		background-color: rgb(107, 105, 105);
-		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.7));
+		background-color: rgb(56, 56, 56);
+		filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.7));
 	}
 </style>

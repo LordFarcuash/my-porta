@@ -5,19 +5,21 @@
 	import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<div class="Point">
-	<FontAwesomeIcon icon={faUserSecret} size="2x" style="color: #e6e6e6;" />
-	<div class="about">
-		<span>A</span>
-		<span>B</span>
-		<span>O</span>
-		<span>U</span>
-		<span>T</span>
-		<br />
-		<span>M</span>
-		<span>E</span>
+<a href="/about">
+	<div class="Point">
+		<FontAwesomeIcon icon={faUserSecret} size="2x" style="color: #e6e6e6;" />
+		<div class="about">
+			<span>A</span>
+			<span>B</span>
+			<span>O</span>
+			<span>U</span>
+			<span>T</span>
+			<br />
+			<span>M</span>
+			<span>E</span>
+		</div>
 	</div>
-</div>
+</a>
 <div class="Point-2">
 	<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
 	<div class="about2">
