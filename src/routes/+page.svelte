@@ -5,15 +5,12 @@
 	import Navbar from '$lib/components/navbar/navbar.svelte';
 </script>
 
-<Loadscreen />
-<main class="main">
+<!-- <Loadscreen /> -->
+<main class="">
 	<Navbar />
-	<Object3d />
-	<Aside />
+	<!-- <Object3d />
+	<Aside /> -->
 </main>
 
 <style>
-	.main {
-		display: flex;
-	}
 </style>
