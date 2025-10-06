@@ -206,6 +206,7 @@
 		font-weight: bold;
 		font-size: 10px;
 		font-family: 'Kode Mono', system-ui, sans-serif;
+		color: white;
 	}
 
 	.Point:hover .about span,

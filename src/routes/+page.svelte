@@ -19,7 +19,7 @@
 	});
 </script>
 
-<!-- <Loadscreen /> -->
+<Loadscreen />
 <main class="">
 	<Navbar />
 	<!-- {#if isDesktop}

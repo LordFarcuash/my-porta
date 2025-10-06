@@ -2,7 +2,7 @@
 	const messages = {
 		Home: "I'm Ledanis, a Full-Stack developer with a background in programming analysis. I enjoy working on self-driven projects, approach problem-solving with patience, and constantly seek newperspectives to strengthen my critical thinking as a programmer",
 		About:
-			"I'm Daniel Puentes and i see that you are interest about my person, for starting im 23 Years old, Living in Santiago de Chile. I Just finish my intership on data analyst, what i like to do in my free time is playing video games, listen to music (I really like vocaloid and rock), sometimes i do excersice too, im much of a homeboy and thanks for reading this little about me <3."
+			"I'm Daniel Puentes and i see that you are interest about my person, for starting im 23 Years old, Living in Santiago de Chile. I Just finish my intership on data analyst, what i like to do in my free time is playing video games, listen to music (I really like vocaloid and rock), sometimes i do excersice too, thanks for reading this little about me <3."
 	};
 
 	import { urlState } from './stores/currentURL.svelte';
@@ -12,14 +12,22 @@
 
 <aside class="aside place-items-end">
 	{#if urlState.url === 'home'}
-		<h1 class="text-zinc-400">Welcome Visitor!</h1>
+		<h1
+			class="text-zinc-400 transition-all duration-700 ease-out opacity-0 translate-y-2 animate-fadeInUp"
+		>
+			Welcome Visitor!
+		</h1>
 		<h2
 			class="text-[2.5rem] transition-all duration-700 ease-out opacity-0 translate-y-2 animate-fadeInUp"
 		>
 			{messages.Home}
 		</h2>
 	{:else if urlState.url === 'about'}
-		<h1 class="text-zinc-400">¿About Ledanis?</h1>
+		<h1
+			class="text-zinc-400 transition-all duration-700 ease-out opacity-0 translate-y-2 animate-fadeInUp"
+		>
+			¿About Ledanis?
+		</h1>
 		<h2
 			class="text-[2rem] transition-all duration-700 ease-out opacity-0 translate-y-2 animate-fadeInUp"
 		>
