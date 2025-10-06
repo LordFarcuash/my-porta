@@ -3,50 +3,105 @@
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 	import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
+	import { Avatar } from '@skeletonlabs/skeleton-svelte/composed';
+	import shinobg from '../../assets/shinobg.png';
+
+	import { urlState } from '../stores/currentURL.svelte';
+
+	import { PUBLIC_URL_HOST } from '$env/static/public';
 </script>
 
-<a href="/about">
-	<div class="Point">
-		<FontAwesomeIcon icon={faUserSecret} size="2x" style="color: #e6e6e6;" />
-		<div class="about">
-			<span>A</span>
-			<span>B</span>
+<div class="navbar">
+	<button on:click={() => ((urlState.url = `about`), console.log(urlState.url))}>
+		<div class="Point">
+			<FontAwesomeIcon icon={faUserSecret} size="2x" style="color: #e6e6e6;" />
+			<div class="about">
+				<span>A</span>
+				<span>B</span>
+				<span>O</span>
+				<span>U</span>
+				<span>T</span>
+				<br />
+				<span>M</span>
+				<span>E</span>
+			</div>
+		</div>
+	</button>
+	<div class="Point-2">
+		<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
+		<div class="about2">
+			<span>K</span>
+			<span>N</span>
 			<span>O</span>
-			<span>U</span>
-			<span>T</span>
-			<br />
-			<span>M</span>
+			<span>L</span>
 			<span>E</span>
+			<span>D</span>
+			<span>G</span>
+			<span>E</span>
+			<span>s</span>
 		</div>
 	</div>
-</a>
-<div class="Point-2">
-	<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
-	<div class="about2">
-		<span>K</span>
-		<span>N</span>
-		<span>O</span>
-		<span>L</span>
-		<span>E</span>
-		<span>D</span>
-		<span>G</span>
-		<span>E</span>
-		<span>s</span>
+	<div class="Point-3">
+		<FontAwesomeIcon icon={faDiagramProject} size="2x" style="color: #e6e6e6;" />
+		<div class="about3">
+			<span>G</span>
+			<span>I</span>
+			<span>T</span>
+			<span>H</span>
+			<span>U</span>
+			<span>B</span>
+		</div>
 	</div>
-</div>
-<div class="Point-3">
-	<FontAwesomeIcon icon={faDiagramProject} size="2x" style="color: #e6e6e6;" />
-	<div class="about3">
-		<span>G</span>
-		<span>I</span>
-		<span>T</span>
-		<span>H</span>
-		<span>U</span>
-		<span>B</span>
+	<div class="TitleName">
+		<button on:click={() => ((urlState.url = 'home'), console.log(urlState.url))}> Ledanis </button>
+		<Avatar
+			class="ml-10 mt-5 w-15 h-15 inset-shadow-sm inset-shadow-gray-600 shadow-lg shadow-stone-800 "
+		>
+			<Avatar.Image src={shinobg} />
+			<Avatar.Fallback>Ledanis</Avatar.Fallback>
+		</Avatar>
+	</div>
+	<div class="SubTitle">
+		<span>Full-Stack Developer</span>
 	</div>
 </div>
 
 <style>
+	.navbar {
+		width: 0;
+		height: 0;
+		border-left: 0vh solid transparent;
+		border-right: 100vh solid transparent;
+		border-top: 50vh solid #3e413b;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
+		position: relative;
+		z-index: 3;
+	}
+
+	.TitleName button {
+		font-family: 'Kode Mono', system-ui, sans-serif;
+		font-size: 5rem;
+		color: white;
+	}
+
+	.TitleName {
+		position: absolute;
+		top: -29.5rem;
+		left: 23rem;
+	}
+
+	.SubTitle {
+		width: 20rem;
+		position: absolute;
+		top: -23rem;
+		left: 25rem;
+	}
+	.SubTitle span {
+		font-family: 'Kode Mono', system-ui, sans-serif;
+		font-size: 1rem;
+		color: white;
+	}
+
 	.Point {
 		position: absolute;
 		top: -47vh;
