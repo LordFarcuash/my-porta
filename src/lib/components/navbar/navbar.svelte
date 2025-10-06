@@ -39,7 +39,7 @@
 				<span>s</span>
 			</div>
 		</div>
-		<div class="Point-3">
+		<a class="Point-3" href="https://github.com/LordFarcuash">
 			<FontAwesomeIcon icon={faDiagramProject} size="2x" style="color: #e6e6e6;" />
 			<div class="about3">
 				<span>G</span>
@@ -49,7 +49,7 @@
 				<span>U</span>
 				<span>B</span>
 			</div>
-		</div>
+		</a>
 	</div>
 
 	<div class="header-content">
