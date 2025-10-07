@@ -13,6 +13,10 @@
 		href="https://fonts.googleapis.com/css2?family=Anton&family=Kode+Mono:wght@400..700&display=swap"
 		rel="stylesheet"
 	/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+	/>
 </svelte:head>
 
 {@render children?.()}

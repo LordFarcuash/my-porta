@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,9 @@
 	import { Avatar } from '@skeletonlabs/skeleton-svelte/composed';
 	import shinobg from '../../assets/shinobg.png';
 	import { urlState } from '../stores/currentURL.svelte';
+	import { modalState } from '../stores/currentModalstate.svelte';
+
+	let modal: boolean = false;
 </script>
 
 <div class="navbar">
@@ -25,21 +28,26 @@
 				</div>
 			</div>
 		</button>
-		<div class="Point-2">
-			<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
-			<div class="about2">
-				<span>K</span>
-				<span>N</span>
-				<span>O</span>
-				<span>L</span>
-				<span>E</span>
-				<span>D</span>
-				<span>G</span>
-				<span>E</span>
-				<span>s</span>
+		<button
+			class="nav-btn"
+			on:click={() => ((urlState.url = `knoledge`), console.log(urlState.url))}
+		>
+			<div class="Point-2">
+				<FontAwesomeIcon icon={faBookOpenReader} size="2x" style="color: #e6e6e6;" />
+				<div class="about2">
+					<span>K</span>
+					<span>N</span>
+					<span>O</span>
+					<span>L</span>
+					<span>E</span>
+					<span>D</span>
+					<span>G</span>
+					<span>E</span>
+					<span>s</span>
+				</div>
 			</div>
-		</div>
-		<a class="Point-3" href="https://github.com/LordFarcuash">
+		</button>
+		<button class="Point-3" on:click={() => modalState.set(true)}>
 			<FontAwesomeIcon icon={faDiagramProject} size="2x" style="color: #e6e6e6;" />
 			<div class="about3">
 				<span>G</span>
@@ -49,7 +57,7 @@
 				<span>U</span>
 				<span>B</span>
 			</div>
-		</a>
+		</button>
 	</div>
 
 	<div class="header-content">

@@ -6,6 +6,15 @@
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
+* {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+
 .main-body{
     background-color: #2E302C;
 }
