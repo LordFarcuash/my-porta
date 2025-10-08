@@ -122,6 +122,9 @@
 					</p>
 				</div>
 			</div>
+			<p class="text-[1rem] ml-30 mt-2 bg-neutral-400 rounded-sm w-[30rem] text-center">
+				Currently Workin on: Ticket Sistem
+			</p>
 		</div>
 	{/if}
 </aside>
